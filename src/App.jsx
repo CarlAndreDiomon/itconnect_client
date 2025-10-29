@@ -1,18 +1,24 @@
 import { Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/landingPage";
-import HomePage from "./pages/homePage";
+import LandingPage from "./pages/LandingPage";
+import HomePage from "./pages/HomePage";
+import Navbar from "./components/layout/Navbar";
+import LoginPage from "./pages/loginPage";
 
 const App = () => {
   return (
-    <div className=" flex  h-screen">
-      <h1></h1>
-      <div className="flex-1 overflow-auto">
+    <main className=" w-screen flex flex-col h-screen bg-gray-50">
+      <header className="h-14 bg-white border-b flex items-center justify-between ">
+        <Navbar />
+      </header>
+
+      <section className="flex-1 overflow-auto ">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/landing" element={<LandingPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
