@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import SearchBar from "../../ui/SearchBar";
 
-export default function Navbar() {
+export default function MobileNavbar() {
   return (
     <main>
       <header className="w-screen md:px-16 h-full flex flex-col gap-3 p-4">
