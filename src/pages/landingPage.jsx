@@ -1,6 +1,6 @@
 export default function LandingPage() {
   return (
-    <main className="h-screen flex justify-center items-center bg-blue-200 md:bg-white">
+    <main className="fixed inset-0 z-50 flex-col h-screen flex justify-center items-center bg-blue-200 md:bg-white">
       <article className=" p-5 2xl:p-13 w-4/5 h-4/5 md:w-2/4 lg:w-2/5 xl:w-2/6 2xl:md:w-2/5 md:shadow-md md:border md:bg-blue-200 md:border-gray-500 md:shadow-gray-500 md:rounded-4xl flex flex-col">
         <header className="flex justify-center">
           <h1 className="text-center font-semibold text-4xl 2xl:text-6xl">
