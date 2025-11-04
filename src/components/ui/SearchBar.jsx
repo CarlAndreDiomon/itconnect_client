@@ -16,7 +16,7 @@ export default function SearchBar() {
           } rounded-full hover:bg-gray-100 items-center gap-14`}
         >
           <SearchIcon className="w-6 h-6 text-gray-700" />
-          <h1 className="font-bold text-md">Search</h1>
+          <h1 className="font-bold text-md hidden lg:block">Search</h1>
         </button>
       )}
 
