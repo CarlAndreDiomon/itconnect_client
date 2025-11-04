@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import MobileNavbar from "./components/layout/mobile/MobileNavbar";
 import LoginPage from "./pages/loginPage";
 import DesktopSidebar from "./components/layout/desktop/DesktopSidebar";
+import SettingPage from "./pages/settingPage";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <DesktopSidebar />
       </aside>
 
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1  flex flex-col">
         <header className="lg:hidden bg-white border-b">
           <MobileNavbar />
         </header>
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/landing" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/settings" element={<SettingPage />} />
           </Routes>
         </section>
       </div>
